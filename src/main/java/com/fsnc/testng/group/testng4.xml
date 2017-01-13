@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+  	<groups>
+  		<!-- exclude 除去包含isNotBlank的组 -->
+  		<run>
+  			<include name="isBlank"></include>
+  			<exclude name="isNotBlank"></exclude>
+  		</run>
+  	</groups>
+    <classes>
+      <class name="com.fsnc.testng.group.TestGroup"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
